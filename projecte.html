@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meine Projekte</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* Stiluri ușoare doar pentru această pagină (poți muta în style.css) */
+    .projects-wrap {
+      max-width: 1000px;
+      margin: 40px auto 80px;
+      padding: 0 20px;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+      margin-top: 18px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.75);
+      border: 1px solid #e6e6e6;
+      border-radius: 10px;
+      padding: 16px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+      transition: transform .18s ease, box-shadow .18s ease;
+    }
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.10);
+    }
+    .card h3 {
+      margin: 0 0 8px;
+      color: #0f2b55;
+    }
+    .card p {
+      margin: 0 0 12px;
+      color: #333;
+      font-size: 14px;
+      line-height: 1.45;
+    }
+
+    .backbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+  </style>
+</head>
+<body>
+
+    <!-- 🔹 Bara de navigație (sus în pagină) -->
+  <nav class="topnav">
+    <a href="index.html" class="active">Start</a>
+    <a href="projekte.html">Projekte</a>
+  </nav>
+  
+  <h1>Meine Projekte</h1>
+
+  <div class="projects-wrap">
+    <div class="backbar">
+      <p>Hier sammle ich kleine Übungen und Lernprojekte aus HTML, CSS und JavaScript.</p>
+      <a href="index.html" class="btn">Zur Startseite</a>
+    </div>
+
+    <div class="projects-grid">
+      <article class="card">
+        <h3>Projekt 1 – Erste Webseite</h3>
+        <p>Grundlayout mit Flexbox, Bild + Text, goldener Titel-Effekt.</p>
+        <a class="btn" href="index.html">ansehen</a>
+      </article>
+
+      <article class="card">
+        <h3>Projekt 2 – Buttons & Hover</h3>
+        <p>Interaktive Buttons mit Glow, Transition und leichten Effekten.</p>
+        <a class="btn" href="#">bald verfügbar</a>
+      </article>
+
+      <article class="card">
+        <h3>Projekt 3 – Mini-Galerie</h3>
+        <p>Kleine responsive Bildgalerie (Grid), mobilfreundlich.</p>
+        <a class="btn" href="#">bald verfügbar</a>
+      </article>
+    </div>
+  </div>
+</body>
+</html>
